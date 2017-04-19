@@ -1,0 +1,22 @@
+<div class="row">
+	<div class="col-md-5 col-md-offset-2">
+		<div class="row">
+			<h4>Your long URL is:</h4>
+			<a ng-href="{{longUrl}}" target="_blank">{{longUrl}}</a>
+		</div>
+		<div class="row">
+			<h4>Your short URL is:</h4>
+			<h3><a ng-href="{{shortUrl}}" target="_blank">{{shortUrlToShow}}</a></h3>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="panel panel-default">
+			<div class="panel-heading">Total Clicks</div>
+			<h1 class="panel-body"> {{totalClicks}} </h1>
+			<button ng-click=showId(totalClicks) class="btn btn-primary">秒杀</button>
+			<!--<button ng-click="showId({{1234}})" type="button" class="btn btn-primary">秒杀</button>-->
+		</div>
+	</div>
+</div>
+
+
